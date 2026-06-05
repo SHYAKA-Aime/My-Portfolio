@@ -35,14 +35,14 @@ $(document).ready(function(){
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["Backend Developer", "Frontend Developer", "Problem solver"],
+        strings: ["Full-Stack Developer", "AI Engineer", "Backend Developer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
-    var typed = new Typed(".typing-2", {
-        strings: ["Backend Developer", "Frontend Developer", "Problem solver"],
+    var typed2 = new Typed(".typing-2", {
+        strings: ["Full-Stack Developer", "AI Engineer", "Backend Developer"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -52,20 +52,22 @@ $(document).ready(function(){
     $('.carousel').owlCarousel({
         margin: 20,
         loop: true,
-        autoplayTimeOut:200,
+        autoplayTimeOut: 200,
         autoplayHoverPause: true,
+        nav: true,
+        navText: [
+            '<i class="fas fa-chevron-left"></i>',
+            '<i class="fas fa-chevron-right"></i>'
+        ],
         responsive: {
             0:{
-                items: 1,
-                nav: false
+                items: 1
             },
             600:{
-                items: 2,
-                nav: false
+                items: 2
             },
             1000:{
-                items: 3,
-                nav: false
+                items: 3
             }
         }
     });
