@@ -414,6 +414,17 @@ section .title::after{
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
 }
+.skills .skills-content .right .skill-group-title{
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: crimson;
+    margin: 0 0 12px;
+}
+.skills .skills-content .right .skill-group-title:not(:first-child){
+    margin-top: 25px;
+}
 .skills .skills-content .right .info{
     display: flex;
     margin-bottom: 5px;
